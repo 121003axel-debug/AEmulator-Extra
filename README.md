@@ -2,7 +2,8 @@
 
 <img src="docs/assets/logo.png" width="128" alt="AEmulator logo"/>
 
-# AEmulator
+# AEmulator Extra
+???? 
 
 **Run classic Android firmware — HTC Sense, TouchWiz, MIUI, AOSP — on a modern phone. No root, no PC.**
 
@@ -38,49 +39,9 @@ The list of firmware that has been checked — with statuses, notes and download
 ## 🚀 Quick start
 
 1. Download the APK from [Releases](https://github.com/uxazu/aemulator/releases) and install it.
-2. Find a firmware on the [forum](https://aeforum.uxazuu.space/) and download it to your phone.
-3. Open AEmulator → **Add firmware** and pick the file. Import takes a few minutes.
-4. Press **Start**. The first boot is slower: the system optimises its apps.
-5. Use the ⋮ menu for volume, power button and logs; the ⚙️ button opens app settings and language.
+2. Find a firmware on the [forum](https://aeforum.uxazuu.space/) original forum
 
-## 📋 Requirements
-
-- Android 8.0+ on a 64-bit ARM phone (arm64-v8a)
-- About 1–3 GB of free space per firmware
-- A recent Snapdragon / Dimensity / Tensor chip is recommended
-
-## ⚙️ How it works
-
-Each guest process runs under a patched user-mode QEMU. A binder daemon replaces the kernel driver, a GL bridge forwards OpenGL ES calls to the phone’s GPU, and small guest libraries (audio HAL, audio policy wrapper, LD_PRELOAD shim) adapt vendor code to the emulator. The importer reads the firmware, finds the init scripts in its boot image and builds a start plan for system services.
-
-## 🛠️ Build from source
-
-You need JDK 17, Android SDK 36 and NDK r28. Native guest parts are built with the scripts in `native/*/build.sh`.
-
-```bash
-git clone https://github.com/uxazu/aemulator.git
-cd aemulator
-./gradlew assembleRelease
-```
-
-## 🙏 Credits
-
-AEmulator grew out of the HTC Desire HD and HTC One M7 emulators by [the original author](https://t.me/istratiit_ech) — their engine made this project possible.
-
-## 💙 Support the project
-
-If AEmulator brought back a phone you loved, you can support development:
-
-- 💳 [dalink.to/uxazu](https://dalink.to/uxazu)
-
-## 🔗 Links
-
-- 🌐 Website: [aemulator.gt.tc](https://aemulator.gt.tc)
-- 💬 Forum: [aeforum.uxazuu.space](https://aeforum.uxazuu.space/)
-- 📣 Telegram channel: [@aemulatorofficial](https://t.me/aemulatorofficial)
-- 👤 Author: [uxazu](https://github.com/uxazu)
-- 🧬 Original author: [t.me/istratiit_ech](https://t.me/istratiit_ech)
-
-## 📄 License
+ thanks original author
+ uxazuu
 
 GPL-3.0. Android, trademarks and firmware belong to their owners.
